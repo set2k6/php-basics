@@ -2,7 +2,7 @@
 
 <h1>Submit Your Name</h1>
 
-<form method="GET" action="/names">
+<form method="POST" action="/names">
 
     <input name="name"></input>
 
@@ -12,17 +12,7 @@
 
 
 
-<!--<h1>Tasks For The Day</h1>-->
-<!---->
-<!--    --><?php //foreach ($tasks as $task) : ?>
-<!--        <li>-->
-<!--            --><?php //if ($task->completed)  :?>
-<!--                <strike> --><?//= $task->description; ?><!--</strike>-->
-<!--            --><?php //else : ?>
-<!--                --><?//= $task->description; ?>
-<!--            --><?php //endif; ?>
-<!--        </li>-->
-<!--    --><?php //endforeach; ?>
+
 
 <?php require ('partials/footer.php'); ?>
 
