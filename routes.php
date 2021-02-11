@@ -1,10 +1,11 @@
 <?php
 
-    $router->get('','controllers/index.php');
-    $router->get('about','controllers/about.php');
-    $router->get('about/culture','controllers/about-culture.php');
-    $router->get('contact-us','controllers/contact.php');
-    $router->post('names','controllers/add-name.php');  ///only for POST types
+    $router->get('','PagesController@home');
+    $router->get('about','PagesController@about');
+    $router->get('contact-us','PagesController@contact');
+
+    $router->get('users','UsersController@index');
+    $router->post('users','UsersController@store');
 
 //var_dump($router->routes);
 
